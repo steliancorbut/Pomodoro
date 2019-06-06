@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\plugins\VueNoiseGeneratorPlugin.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/plugins/</a> VueNoiseGeneratorPlugin.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">15.58% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>12/77</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">43.75% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>7/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">5.56% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">10.96% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>8/73</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">1 branch</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// plugins/VueNoiseGenerator.js
+import _ from 'underscore'
+&nbsp;
+// Thanks to this great tutorial: http://noisehack.com/generate-noise-web-audio-api/
+var audioContext, bufferSize, noise
+&nbsp;
+audioContext = {
+  resume: <span class="fstat-no" title="function not covered" >function () {</span>},
+  suspend: <span class="fstat-no" title="function not covered" >function () {</span>},
+  fake: true
+}
+&nbsp;
+<span class="missing-if-branch" title="if path not taken" >I</span>if (window.AudioContext || window.webkitAudioContext) {
+<span class="cstat-no" title="statement not covered" >  a</span>udioContext = new (window.AudioContext || window.webkitAudioContext)()
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function generateWhiteNoise () {</span>
+<span class="cstat-no" title="statement not covered" >  v</span>ar noiseBuffer, output
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  b</span>ufferSize = 2 * audioContext.sampleRate
+<span class="cstat-no" title="statement not covered" >  n</span>oiseBuffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate)
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  o</span>utput = noiseBuffer.getChannelData(0)
+<span class="cstat-no" title="statement not covered" >  _</span>.times(bufferSize, <span class="fstat-no" title="function not covered" >i =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    o</span>utput[i] = Math.random() * 2 - 1
+  })
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  n</span>oise = audioContext.createBufferSource()
+<span class="cstat-no" title="statement not covered" >  n</span>oise.buffer = noiseBuffer
+<span class="cstat-no" title="statement not covered" >  n</span>oise.loop = true
+<span class="cstat-no" title="statement not covered" >  n</span>oise.start(0)
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  r</span>eturn noise
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function generatePinkNoise () {</span>
+<span class="cstat-no" title="statement not covered" >  b</span>ufferSize = 4096
+<span class="cstat-no" title="statement not covered" >  n</span>oise = (<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >    v</span>ar b0, b1, b2, b3, b4, b5, b6, node
+<span class="cstat-no" title="statement not covered" >    b</span>0 = b1 = b2 = b3 = b4 = b5 = b6 = 0.0
+<span class="cstat-no" title="statement not covered" >    n</span>ode = audioContext.createScriptProcessor(bufferSize, 1, 1)
+<span class="cstat-no" title="statement not covered" >    n</span>ode.onaudioprocess = <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >      v</span>ar output
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      o</span>utput = e.outputBuffer.getChannelData(0)
+<span class="cstat-no" title="statement not covered" >      _</span>.times(bufferSize, <span class="fstat-no" title="function not covered" >i =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        v</span>ar white = Math.random() * 2 - 1
+<span class="cstat-no" title="statement not covered" >        b</span>0 = 0.99886 * b0 + white * 0.0555179
+<span class="cstat-no" title="statement not covered" >        b</span>1 = 0.99332 * b1 + white * 0.0750759
+<span class="cstat-no" title="statement not covered" >        b</span>2 = 0.96900 * b2 + white * 0.1538520
+<span class="cstat-no" title="statement not covered" >        b</span>3 = 0.86650 * b3 + white * 0.3104856
+<span class="cstat-no" title="statement not covered" >        b</span>4 = 0.55000 * b4 + white * 0.5329522
+<span class="cstat-no" title="statement not covered" >        b</span>5 = -0.7616 * b5 - white * 0.0168980
+<span class="cstat-no" title="statement not covered" >        o</span>utput[i] = b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362
+<span class="cstat-no" title="statement not covered" >        o</span>utput[i] *= 0.11 // (roughly) compensate for gain
+<span class="cstat-no" title="statement not covered" >        b</span>6 = white * 0.115926
+      })
+    }
+<span class="cstat-no" title="statement not covered" >    r</span>eturn node
+  })()
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  r</span>eturn noise
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function generateBrownNoise () {</span>
+<span class="cstat-no" title="statement not covered" >  b</span>ufferSize = 4096
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  n</span>oise = (<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >    v</span>ar lastOut, node
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    l</span>astOut = 0.0
+<span class="cstat-no" title="statement not covered" >    n</span>ode = audioContext.createScriptProcessor(bufferSize, 1, 1)
+<span class="cstat-no" title="statement not covered" >    n</span>ode.onaudioprocess = <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >      v</span>ar output = e.outputBuffer.getChannelData(0)
+<span class="cstat-no" title="statement not covered" >      _</span>.times(bufferSize, <span class="fstat-no" title="function not covered" >i =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        v</span>ar white = Math.random() * 2 - 1
+<span class="cstat-no" title="statement not covered" >        o</span>utput[i] = (lastOut + (0.02 * white)) / 1.02
+<span class="cstat-no" title="statement not covered" >        l</span>astOut = output[i]
+<span class="cstat-no" title="statement not covered" >        o</span>utput[i] *= 3.5 // (roughly) compensate for gain
+      })
+    }
+<span class="cstat-no" title="statement not covered" >    r</span>eturn node
+  })()
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  r</span>eturn noise
+}
+&nbsp;
+export default {
+  install: <span class="fstat-no" title="function not covered" >function (Vue) {</span>
+<span class="cstat-no" title="statement not covered" >    V</span>ue.directive('noise', <span class="fstat-no" title="function not covered" >(value) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      v</span>ar noise
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if (audioContext.fake) {</span>
+<span class="cstat-no" title="statement not covered" >        r</span>eturn
+      }
+<span class="cstat-no" title="statement not covered" >      s</span>witch (value) {
+        case 'white':
+<span class="cstat-no" title="statement not covered" >          n</span>oise = generateWhiteNoise()
+<span class="cstat-no" title="statement not covered" >          b</span>reak
+        case 'pink':
+<span class="cstat-no" title="statement not covered" >          n</span>oise = generatePinkNoise()
+<span class="cstat-no" title="statement not covered" >          b</span>reak
+        case 'brown':
+<span class="cstat-no" title="statement not covered" >          n</span>oise = generateBrownNoise()
+<span class="cstat-no" title="statement not covered" >          b</span>reak
+        default:
+<span class="cstat-no" title="statement not covered" >          n</span>oise = generateWhiteNoise()
+      }
+<span class="cstat-no" title="statement not covered" >      n</span>oise.connect(audioContext.destination)
+<span class="cstat-no" title="statement not covered" >      a</span>udioContext.suspend()
+    })
+<span class="cstat-no" title="statement not covered" >    V</span>ue.noise = <span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >{</span></span></span>
+      start () {
+<span class="cstat-no" title="statement not covered" >        a</span>udioContext.resume()
+      },
+      pause () {
+<span class="cstat-no" title="statement not covered" >        a</span>udioContext.suspend()
+      },
+      stop () {
+<span class="cstat-no" title="statement not covered" >        a</span>udioContext.suspend()
+      }
+    }
+  }
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jun 06 2019 16:38:57 GMT+0300 (Eastern European Summer Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
