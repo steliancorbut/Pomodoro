@@ -1,6 +1,6 @@
 # Pomodoro
 
-[![Build Status](https://travis-ci.org/chudaol/Pomodoro.svg?branch=master)](https://travis-ci.org/chudaol/Pomodoro)
+[![Build Status](https://travis-ci.org/steliancorbut/Pomodoro.svg?branch=master)
 
 > Pomodoro application
 
