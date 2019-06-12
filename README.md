@@ -36,5 +36,6 @@ npm test
 - implement unit tests and end-to-end tests;
 - connected and Set up a continuous integration process using Travis.
 
+Live demo at: [https://pomodoro-app-heroku.herokuapp.com/](https://pomodoro-app-heroku.herokuapp.com/)
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For detailed explanation on how things work, checkout also the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
