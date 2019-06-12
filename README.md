@@ -26,12 +26,14 @@ npm run e2e
 # run all tests
 npm test
 ```
+
 ## Description
 
-- Vue components;
-- centralized state management with Vuex;
-- create and use NoiseGenerator plugin;
-- implement unit tests and end-to-end tests (using Karma test runner, Mocha test framework, Chai expectations library, Sinon for mocks, Nightwatch);
+- 4 Vue components;
+- add the kitten image to KittensComponent.vue using [thecatapi public service API](https://thecatapi.com/) as the source;
+- centralized state management with Vuex store;
+- create and use the NoiseGenerator Vue plugin;
+- implement unit tests and end-to-end tests;
 - connected and Set up a continuous integration process using Travis;
 - set up a continuous deployment using Heroku.
 
