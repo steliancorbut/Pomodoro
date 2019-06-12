@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/steliancorbut/Pomodoro.svg?branch=master)]
 
-> Pomodoro application, made with Vue.js, example from book "Learning Vue.js 2" by Olga Filipova, Packt Publishing, 2016
+> Pomodoro application, made with Vue.js
+> example from book "Learning Vue.js 2" by Olga Filipova, Packt Publishing, 2016
 
 ## Build Setup
 
